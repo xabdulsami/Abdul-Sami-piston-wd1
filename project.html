@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            color: #333;
+        }
+        
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background 0.3s ease-in-out;
+        }
+        
+        header.scrolled {
+            background: #0056b3;
+        }
+        
+        header .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        nav ul li a:hover {
+            color: #e0e0e0;
+        }
+        
+        section {
+            padding: 4rem 1rem;
+            background: whitesmoke;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        section .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 28px;
+            color: #007BFF;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .project, .skill {
+            background: #8fc8f7;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0)
+
+        }
+         .skill {
+            background: #8fc8f7;
+        }
+        
+         .skill h3 {
+            margin-top: 0;
+            color: #0f6ed3;
+        }
+         form {
+            display: flex;
+            flex-direction: column;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        form label {
+            margin: 0.5rem 0;
+            font-weight: bold;
+        }
+        
+        form input, form textarea {
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #3a2929;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        form button {
+            padding: 0.75rem;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease-in-out;
+        }
+        
+        form button:hover {
+            background: #0056b3;
+        }
+        
+        footer {
+            background: #343a40;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        footer .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="container">
+                <h1>Abdul Sami</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p><i>I’m Abdul Sami, a passionate Frontend Web Developer with a solid foundation in HTML, CSS, and TypeScript. My journey in web development is driven by a relentless pursuit of excellence and innovation. Currently, I am deepening my expertise by delving into JavaScript and Next.js, aiming to bridge the gap between frontend aesthetics and backend functionality. My ambition is to evolve into a proficient Full Stack Developer, where I can seamlessly integrate both frontend and backend technologies to craft sophisticated and user-centric web solutions. Join me as I continue to explore and create within the dynamic realm of web development.</i></p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>NODE Projects</h3>
+                <p>Made node projects using Typescript.
+                    <p><b>Node.js Projects: </b>Developed and deployed several backend projects utilizing Node.js, demonstrating robust server-side capabilities and effective API design.</p>
+                <p><b>TypeScript Integration:</b>Leveraged TypeScript to enhance code quality and maintainability in Node.js projects, applying advanced type definitions and strict type-checking to ensure reliable and scalable application development.
+                </p>
+                </p>
+            </div>
+            <div class="project">
+                <h3>HTML,CSS Projects</h3>
+           <p>Created a variety of resumes, layouts, and frameworks using HTML and CSS, showcasing my ability to design and implement visually appealing and functional web elements. My work demonstrates proficiency in crafting responsive and accessible web interfaces, tailored to meet diverse design requirements and user needs.</p>
+            </div>
+        
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>Proficient in HTML,CSS and Typescript.</p>
+                <p><b>HTML5:</b> Mastery in creating semantic and accessible web structures with the latest HTML5 standards.
+                    <p><b>CSS3:</b> Advanced skills in crafting responsive, visually appealing designs using modern CSS techniques, including Flexbox, Grid, and animations.</p>
+                    <p><b>TypeScript:</b> Proficient in writing scalable and maintainable code with TypeScript, leveraging its powerful type system to enhance development efficiency and reduce bugs.</p>
+                    </p>
+            </div>
+            <div class="skill">
+                <h3>Aspiring Full Stack Developer</h3>
+                 <p>Learning JavaScript and NextJS.
+                    <p><b>JavaScript:</b>Currently enhancing my expertise in JavaScript, focusing on core concepts and modern frameworks to build dynamic and interactive web applications.</p>
+                 <p><b>NextJS:</b> Actively learning Next.js to master server-side rendering and static site generation, aiming to deliver high-performance and scalable web solutions.</p>
+               <p><b>Career Goal:</b>Passionate about becoming a versatile Full-Stack Developer, with a strong foundation in both frontend and backend technologies to create seamless, end-to-end user experiences.</p>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="mailto: xabdulsami@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
