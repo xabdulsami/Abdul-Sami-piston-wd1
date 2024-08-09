@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Assignment 4 Container</title>
+    <style>
+        * {
+            margin: 5px;
+            padding: 5px;
+            gap: 0px;
+        }
+        .body {
+            width: 99%;
+            height: 98vh;
+        }
+        .header {
+            background-color: rgb(106, 106, 224);
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            height: 8px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 25px;
+        }
+        .footer {
+            background-color: rgb(106, 106, 218);
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            height: 8px;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+        .main-container {
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            display: flex;
+            gap: 30px;
+            height: 400px;
+        }
+        .container .aside {
+            background: rgb(204, 91, 91);
+            width: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container .article {
+            background: rgb(218, 110, 110);
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end; 
+        }
+        .images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: end;
+            width: 100%;
+            margin-bottom: 10px;
+            gap: 20px;
+        }
+        .images .img {
+            width: 300px;
+            height: 150px;
+            background: yellowgreen;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="main-container">
+    <header class="header"><h3>Header</h3></header>
+    <div class="container">
+        <aside class="aside"><h1>Aside</h1></aside>
+        <article class="article"><h1>Article</h1> 
+                <div class="images">
+                <div class="img"><h3>image</h3></div>
+                <div class="img"><h3>image</h3></div>
+                <div class="img"><h3>image</h3></div>
+            </div>
+        </article>
+    </div>
+    <footer class="footer"><h1>Footer</h1></footer>
+</body>
+</html>
